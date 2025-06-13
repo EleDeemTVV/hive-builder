@@ -2,16 +2,34 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8" />
-  <title>Hive Builder – Kategorie včel</title>
+  <title>Hive Builder & Bee List</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hive Builder – Kategorie včel</h1>
-  <div id="hive"></div>
+  <h1>Hive Builder & Bee List</h1>
+  <div id="container">
+    <section id="bee-list">
+      <h2>Seznam včel</h2>
+      <div id="bees"></div>
+    </section>
 
-  <div id="bee-detail" class="hidden">
-    <h2 id="category-name"></h2>
-    <pre id="bee-list"></pre>
+    <section id="hive-builder">
+      <h2>Hive Builder</h2>
+      <div id="hive"></div>
+
+      <div id="controls" class="hidden">
+        <h3>Vyber včelu</h3>
+        <select id="category-select"></select>
+        <select id="bee-select"></select>
+        <button id="assign-bee">Přiřadit včelu</button>
+      </div>
+
+      <div id="bee-detail" class="hidden">
+        <h3>Detail včely</h3>
+        <p><strong>Jméno:</strong> <span id="bee-name"></span></p>
+        <p><strong>Kategorie:</strong> <span id="bee-category"></span></p>
+      </div>
+    </section>
   </div>
 
   <script src="script.js"></script>
