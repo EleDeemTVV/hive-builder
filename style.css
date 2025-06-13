@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #fdf6e3;
+  max-width: 600px;
+  margin: auto;
+}
+
+#hive {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category {
+  flex: 1;
+  background-color: #ffe08a;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+.category:hover {
+  background-color: #ffcd3c;
+}
+
+#bee-detail {
+  background: #fff5d1;
+  border: 1px solid #f0c000;
+  padding: 15px;
+  white-space: pre-wrap;
+}
+
+.hidden {
+  display: none;
+}
